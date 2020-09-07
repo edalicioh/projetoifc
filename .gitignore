@@ -1,0 +1,6 @@
+*.csv
+*.txt
+__pycache__
+.vscode
+.mypy_cache
+vendor
