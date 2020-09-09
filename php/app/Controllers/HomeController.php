@@ -1,6 +1,5 @@
 <?php
 namespace App\Controllers;
-use App\Models\Home;
 use Core\BaseController;
 use Core\Container;
 
@@ -16,14 +15,14 @@ class HomeController extends BaseController
 
     public function index()
     {
-        $data = $this->db->all() ;
-        return  $this->renderView('home/home',  $data);
+        $this->data = $this->db->all() ;        
+        return  $this->renderView('home/home', 'layout/index' , "Home");
            
     }
 
     public function chart()
     {
         $data = $this->db->all() ;
-        return $this->exitJson(  $data) ; 
+        return $this->json( $data) ; 
     }
 }

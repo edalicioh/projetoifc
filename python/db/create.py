@@ -62,14 +62,17 @@ class Create:
         print("Create table")
 
     def create_table_chart(self):
+
         sql = "drop table dados_chart"
         self.db.execute_query(sql)
+
         sql = """
             CREATE TABLE dados_chart (
                 cidade varchar(200),
                 obitos varchar(20),
                 positivos varchar(50),
-                incidencia varchar(50)
+                incidencia varchar(50),
+                populacao varchar(50)
             )
         """
         self.db.execute_query(sql)

@@ -1,0 +1,9 @@
+.sidebar-link:hover {
+    background: #3a3b452b !important;
+}
+
+@media (min-width: 980px) {
+    .sidebar-link:hover {
+        width: 95%;
+    }
+  }

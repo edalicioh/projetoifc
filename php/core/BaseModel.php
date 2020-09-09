@@ -107,4 +107,12 @@ abstract class BaseModel
         return $result;
     }
 
+    public function raw($query)
+    {
+        $stmt = $this->pdo->prepare($query);
+        $result = $stmt->execute();
+        $stmt->closeCursor();
+        return $result;
+    }
+
 }

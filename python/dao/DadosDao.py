@@ -85,8 +85,9 @@ class DadosDao(Dao):
                 cidade,
                 obitos,
                 positivos ,
-                incidencia
-            ) VALUES (%s, %s, %s, %s)
+                incidencia,
+                populacao
+            ) VALUES (%s, %s, %s, %s,%s)
         """
 
         self.db.execute_query(sql, params)

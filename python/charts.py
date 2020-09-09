@@ -10,7 +10,7 @@ create.create_table_chart()
 casos = dadosDao.find_by_caso()
 obitos = dadosDao.find_by_obito()
 
-file_name = "csv/populacao.csv"
+file_name = "python/csv/populacao.csv"
 
 with open(file_name, 'r') as arquivo:
     dados = [x for x in csv.DictReader(arquivo)]
@@ -41,6 +41,7 @@ for dado in dados:
         obitoTotal,
         positivos,
         incidencia,
+        populacao,
     )
     is_cidade = len(dadosDao.find_by_cidade((cidade,)))
     print(is_cidade)

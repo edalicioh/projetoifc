@@ -151,6 +151,7 @@ for dado in dados_populacao:
         obitoTotal,
         positivos,
         incidencia,
+        populacao,
     )
     is_cidade = len(dadosDao.find_by_cidade((cidade,)))
     print(is_cidade)
