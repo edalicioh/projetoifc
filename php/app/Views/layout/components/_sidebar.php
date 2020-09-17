@@ -12,8 +12,8 @@
 
                 <?php foreach ($this->data as $key => $value) :  ?>
                 <li class="nav-item text-center p-2">
-                    <a href="#" class="nav-link sidebar-link ">
-                        <p class="text text-dark"><?= $value->cidade ?></p>
+                    <a href="#" class="nav-link sidebar-link " data-id="<?= $value->codigo_ibge_municipio ?>">
+                        <p class="text text-dark" ><?= $value->cidade ?></p>
                     </a>
                 </li>
                 <?php endforeach ?>

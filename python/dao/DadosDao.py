@@ -69,11 +69,11 @@ class DadosDao(Dao):
     def find_by_caso(self):
 
         sql = """
-            SELECT 
+            SELECT
             municipio,
             COUNT(*)
-            FROM dados 
-            WHERE classificacao = 'CONFIRMADO' 
+            FROM dados
+            WHERE classificacao = 'CONFIRMADO'
             GROUP BY municipio
         """
         cursor = self.db.execute_query(sql)
@@ -82,12 +82,13 @@ class DadosDao(Dao):
     def insert_chart(self, params):
         sql = """
             INSERT INTO dados_chart (
+                codigo_ibge_municipio,
                 cidade,
                 obitos,
                 positivos ,
                 incidencia,
                 populacao
-            ) VALUES (%s, %s, %s, %s,%s)
+            ) VALUES (%s,%s, %s, %s, %s,%s)
         """
 
         self.db.execute_query(sql, params)
@@ -99,3 +100,39 @@ class DadosDao(Dao):
         """
         cursor = self.db.execute_query(sql, param)
         return cursor.fetchall()
+
+    def find_all(self):
+        sql = """
+            SELECT
+            *
+            FROM dados
+            where obito = 'SIM'
+        """
+        cursor = self.db.execute_query(sql)
+        return cursor.fetchall()
+
+    def find_periudo(self, params):
+        sql = """
+            SELECT   
+            *
+            FROM dados 
+            WHERE codigo_ibge_municipio = %s
+            AND data_obito >=  %s
+            AND data_obito <=  %s
+        """
+        cursor = self.db.execute_query(sql, params)
+        return cursor.fetchall()
+
+    def insert_media_movel(self, params):
+        sql = """
+            INSERT INTO media_movel (
+                cidade,
+                codigo_ibge_municipio,
+                data_obito ,
+                quantidade_periudo ,
+                media
+            ) VALUES (%s, %s, %s, %s,%s)
+        """
+
+        self.db.execute_query(sql, params)
+        self.db.conn.commit()

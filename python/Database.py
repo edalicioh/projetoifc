@@ -13,7 +13,7 @@ class Database:
             Database.instance = Database()
         return Database.instance
 
-    def __init__(self, host='localhost', user='root', password='mt102030', db='covid_py'):
+    def __init__(self, host='sh4ob67ph9l80v61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', user='slfy8mk1fy7fhqb3', password='bb14oor3sjqs6ot1', db='wxjw05a7yqc6owjg'):
 
         try:
             conn = mysql.connector.connect(
@@ -28,6 +28,9 @@ class Database:
                 print("User name or password is wrong")
             else:
                 print(errorcode)
+    """
+    execute
+    """
 
     def execute_query(self, query, params=None):
         cursor = self.conn.cursor()

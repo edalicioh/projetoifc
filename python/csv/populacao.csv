@@ -1,0 +1,294 @@
+sigla,codigo,municipio,populacao
+SC,4200051,Abdon Batista,2.653
+SC,4200101,Abelardo Luz,17.100
+SC,4200200,Agrolândia,9.323
+SC,4200309,Agronômica,4.904
+SC,4200408,Água Doce,6.961
+SC,4200507,Águas de Chapecó,6.110
+SC,4200556,Águas Frias,2.424
+SC,4200606,Águas Mornas,5.548
+SC,4200705,Alfredo Wagner,9.410
+SC,4200754,Alto Bela Vista,2.005
+SC,4200804,Anchieta,6.380
+SC,4200903,Angelina,5.250
+SC,4201000,Anita Garibaldi,8.623
+SC,4201109,Anitápolis,3.214
+SC,4201208,Antônio Carlos,7.458
+SC,4201257,Apiúna,9.600
+SC,4201273,Arabutã,4.193
+SC,4201307,Araquari,24.810
+SC,4201406,Araranguá,61.310
+SC,4201505,Armazém,7.753
+SC,4201604,Arroio Trinta,3.502
+SC,4201653,Arvoredo,2.260
+SC,4201703,Ascurra,7.412
+SC,4201802,Atalanta,3.300
+SC,4201901,Aurora,5.549
+SC,4201950,Balneário Arroio do Silva,9.586
+SC,4202008,Balneário Camboriú,108.089
+SC,4202057,Balneário Barra do Sul,8.430
+SC,4202073,Balneário Gaivota,8.234
+SC,4202081,Bandeirante,2.906
+SC,4202099,Barra Bonita,1.878
+SC,4202107,Barra Velha,22.386
+SC,4202131,Bela Vista do Toldo,6.004
+SC,4202156,Belmonte,2.635
+SC,4202206,Benedito Novo,10.336
+SC,4202305,Biguaçu,58.206
+SC,4202404,Blumenau,309.011
+SC,4202438,Bocaina do Sul,3.290
+SC,4202453,Bombinhas,14.293
+SC,4202503,Bom Jardim da Serra,4.395
+SC,4202537,Bom Jesus,2.526
+SC,4202578,Bom Jesus do Oeste,2.132
+SC,4202602,Bom Retiro,8.942
+SC,4202701,Botuverá,4.468
+SC,4202800,Braço do Norte,29.018
+SC,4202859,Braço do Trombudo,3.457
+SC,4202875,Brunópolis,2.850
+SC,4202909,Brusque,105.503
+SC,4203006,Caçador,70.762
+SC,4203105,Caibi,6.219
+SC,4203154,Calmon,3.387
+SC,4203204,Camboriú,62.361
+SC,4203253,Capão Alto,2.753
+SC,4203303,Campo Alegre,11.748
+SC,4203402,Campo Belo do Sul,7.483
+SC,4203501,Campo Erê,9.370
+SC,4203600,Campos Novos,32.824
+SC,4203709,Canelinha,10.603
+SC,4203808,Canoinhas,52.765
+SC,4203907,Capinzal,20.769
+SC,4203956,Capivari de Baixo,21.674
+SC,4204004,Catanduvas,9.555
+SC,4204103,Caxambu do Sul,4.411
+SC,4204152,Celso Ramos,2.771
+SC,4204178,Cerro Negro,3.581
+SC,4204194,Chapadão do Lageado,2.762
+SC,4204202,Chapecó,183.530
+SC,4204251,Cocal do Sul,15.159
+SC,4204301,Concórdia,68.621
+SC,4204350,Cordilheira Alta,3.767
+SC,4204400,Coronel Freitas,10.213
+SC,4204459,Coronel Martins,2.458
+SC,4204509,Corupá,13.852
+SC,4204558,Correia Pinto,14.785
+SC,4204608,Criciúma,192.308
+SC,4204707,Cunha Porã,10.613
+SC,4204756,Cunhataí,1.882
+SC,4204806,Curitibanos,37.748
+SC,4204905,Descanso,8.634
+SC,4205001,Dionísio Cerqueira,14.811
+SC,4205100,Dona Emma,3.721
+SC,4205159,Doutor Pedrinho,3.604
+SC,4205175,Entre Rios,3.018
+SC,4205191,Ermo,2.050
+SC,4205209,Erval Velho,4.352
+SC,4205308,Faxinal dos Guedes,10.661
+SC,4205357,Flor do Sertão,1.588
+SC,4205407,Florianópolis,421.240
+SC,4205431,Formosa do Sul,2.601
+SC,4205456,Forquilhinha,22.548
+SC,4205506,Fraiburgo,34.553
+SC,4205555,Frei Rogério,2.474
+SC,4205605,Galvão,3.472
+SC,4205704,Garopaba,18.138
+SC,4205803,Garuva,14.761
+SC,4205902,Gaspar,57.981
+SC,4206009,Governador Celso Ramos,12.999
+SC,4206108,Grão Pará,6.223
+SC,4206207,Gravatal,10.635
+SC,4206306,Guabiruba,18.430
+SC,4206405,Guaraciaba,10.498
+SC,4206504,Guaramirim,35.172
+SC,4206603,Guarujá do Sul,4.908
+SC,4206652,Guatambú,4.679
+SC,4206702,Herval d'Oeste,21.239
+SC,4206751,Ibiam,1.945
+SC,4206801,Ibicaré,3.373
+SC,4206900,Ibirama,17.330
+SC,4207007,Içara,58.833
+SC,4207106,Ilhota,12.355
+SC,4207205,Imaruí,11.672
+SC,4207304,Imbituba,40.170
+SC,4207403,Imbuia,5.707
+SC,4207502,Indaial,54.854
+SC,4207577,Iomerê,2.739
+SC,4207601,Ipira,4.752
+SC,4207650,Iporã do Oeste,8.409
+SC,4207684,Ipuaçu,6.798
+SC,4207700,Ipumirim,7.220
+SC,4207759,Iraceminha,4.253
+SC,4207809,Irani,9.531
+SC,4207858,Irati,2.096
+SC,4207908,Irineópolis,10.448
+SC,4208005,Itá,6.426
+SC,4208104,Itaiópolis,20.301
+SC,4208203,Itajaí,183.373
+SC,4208302,Itapema,45.797
+SC,4208401,Itapiranga,15.409
+SC,4208450,Itapoá,14.763
+SC,4208500,Ituporanga,22.250
+SC,4208609,Jaborá,4.041
+SC,4208708,Jacinto Machado,10.609
+SC,4208807,Jaguaruna,17.290
+SC,4208906,Jaraguá do Sul,143.123
+SC,4208955,Jardinópolis,1.766
+SC,4209003,Joaçaba,27.020
+SC,4209102,Joinville,515.288
+SC,4209151,José Boiteux,4.721
+SC,4209177,Jupiá,2.148
+SC,4209201,Lacerdópolis,2.199
+SC,4209300,Lages,156.727
+SC,4209409,Laguna,51.562
+SC,4209458,Lajeado Grande,1.490
+SC,4209508,Laurentino,6.004
+SC,4209607,Lauro Muller,14.367
+SC,4209706,Lebon Régis,11.838
+SC,4209805,Leoberto Leal,3.365
+SC,4209854,Lindóia do Sul,4.642
+SC,4209904,Lontras,10.244
+SC,4210001,Luiz Alves,10.438
+SC,4210035,Luzerna,5.600
+SC,4210050,Macieira,1.826
+SC,4210100,Mafra,52.912
+SC,4210209,Major Gercino,3.279
+SC,4210308,Major Vieira,7.479
+SC,4210407,Maracajá,6.404
+SC,4210506,Maravilha,22.101
+SC,4210555,Marema,2.203
+SC,4210605,Massaranduba,14.674
+SC,4210704,Matos Costa,2.839
+SC,4210803,Meleiro,7.000
+SC,4210852,Mirim Doce,2.513
+SC,4210902,Modelo,4.045
+SC,4211009,Mondaí,10.231
+SC,4211058,Monte Carlo,9.312
+SC,4211108,Monte Castelo,8.346
+SC,4211207,Morro da Fumaça,16.126
+SC,4211256,Morro Grande,2.890
+SC,4211306,Navegantes,60.556
+SC,4211405,Nova Erechim,4.275
+SC,4211454,Nova Itaberaba,4.267
+SC,4211504,Nova Trento,12.190
+SC,4211603,Nova Veneza,13.309
+SC,4211652,Novo Horizonte,2.750
+SC,4211702,Orleans,21.393
+SC,4211751,Otacílio Costa,16.337
+SC,4211801,Ouro,7.372
+SC,4211850,Ouro Verde,2.271
+SC,4211876,Paial,1.763
+SC,4211892,Painel,2.353
+SC,4211900,Palhoça,137.334
+SC,4212007,Palma Sola,7.765
+SC,4212056,Palmeira,2.373
+SC,4212106,Palmitos,16.020
+SC,4212205,Papanduva,17.928
+SC,4212239,Paraíso,4.080
+SC,4212254,Passo de Torres,6.627
+SC,4212270,Passos Maia,4.425
+SC,4212304,Paulo Lopes,6.692
+SC,4212403,Pedras Grandes,4.107
+SC,4212502,Penha,25.141
+SC,4212601,Peritiba,2.988
+SC,4212700,Petrolândia,6.131
+SC,4212809,Piçarras,17.078
+SC,4212908,Pinhalzinho,16.332
+SC,4213005,Pinheiro Preto,3.147
+SC,4213104,Piratuba,4.786
+SC,4213153,Planalto Alegre,2.654
+SC,4213203,Pomerode,27.759
+SC,4213302,Ponte Alta,4.894
+SC,4213351,Ponte Alta do Norte,3.303
+SC,4213401,Ponte Serrada,11.031
+SC,4213500,Porto Belo,16.083
+SC,4213609,Porto União,33.493
+SC,4213708,Pouso Redondo,14.810
+SC,4213807,Praia Grande,7.267
+SC,4213906,Presidente Castelo Branco,1.725
+SC,4214003,Presidente Getúlio,14.887
+SC,4214102,Presidente Nereu,2.284
+SC,4214151,Princesa,2.758
+SC,4214201,Quilombo,10.248
+SC,4214300,Rancho Queimado,2.748
+SC,4214409,Rio das Antas,6.143
+SC,4214508,Rio do Campo,6.192
+SC,4214607,Rio do Oeste,7.090
+SC,4214706,Rio dos Cedros,10.284
+SC,4214805,Rio do Sul,61.198
+SC,4214904,Rio Fortuna,4.446
+SC,4215000,Rio Negrinho,39.846
+SC,4215059,Rio Rufino,2.436
+SC,4215075,Riqueza,4.838
+SC,4215109,Rodeio,10.922
+SC,4215208,Romelândia,5.551
+SC,4215307,Salete,7.370
+SC,4215356,Saltinho,3.961
+SC,4215406,Salto Veloso,4.301
+SC,4215455,Sangão,10.400
+SC,4215505,Santa Cecília,15.757
+SC,4215554,Santa Helena,2.382
+SC,4215604,Santa Rosa de Lima,2.065
+SC,4215653,Santa Rosa do Sul,8.054
+SC,4215679,Santa Terezinha,8.767
+SC,4215687,Santa Terezinha do Progresso,2.896
+SC,4215695,Santiago do Sul,1.465
+SC,4215703,Santo Amaro da Imperatriz,19.823
+SC,4215752,São Bernardino,2.677
+SC,4215802,São Bento do Sul,74.801
+SC,4215901,São Bonifácio,3.008
+SC,4216008,São Carlos,10.291
+SC,4216057,São Cristovão do Sul,5.012
+SC,4216107,São Domingos,9.491
+SC,4216206,São Francisco do Sul,42.520
+SC,4216255,São João do Oeste,6.036
+SC,4216305,São João Batista,26.260
+SC,4216354,São João do Itaperiú,3.435
+SC,4216404,São João do Sul,7.002
+SC,4216503,São Joaquim,24.812
+SC,4216602,São José,209.804
+SC,4216701,São José do Cedro,13.684
+SC,4216800,São José do Cerrito,9.273
+SC,4216909,São Lourenço do Oeste,21.792
+SC,4217006,São Ludgero,10.993
+SC,4217105,São Martinho,3.209
+SC,4217154,São Miguel da Boa Vista,1.904
+SC,4217204,São Miguel do Oeste,36.306
+SC,4217253,São Pedro de Alcântara,4.704
+SC,4217303,Saudades,9.016
+SC,4217402,Schroeder,15.316
+SC,4217501,Seara,16.936
+SC,4217550,Serra Alta,3.285
+SC,4217600,Siderópolis,12.998
+SC,4217709,Sombrio,26.613
+SC,4217758,Sul Brasil,2.766
+SC,4217808,Taió,17.260
+SC,4217907,Tangará,8.674
+SC,4217956,Tigrinhos,1.757
+SC,4218004,Tijucas,30.960
+SC,4218103,Timbé do Sul,5.308
+SC,4218202,Timbó,36.774
+SC,4218251,Timbó Grande,7.167
+SC,4218301,Três Barras,18.129
+SC,4218350,Treviso,3.527
+SC,4218400,Treze de Maio,6.876
+SC,4218509,Treze Tílias,6.341
+SC,4218608,Trombudo Central,6.553
+SC,4218707,Tubarão,97.235
+SC,4218756,Tunápolis,4.633
+SC,4218806,Turvo,11.854
+SC,4218855,União do Oeste,2.910
+SC,4218905,Urubici,10.699
+SC,4218954,Urupema,2.482
+SC,4219002,Urussanga,20.223
+SC,4219101,Vargeão,3.532
+SC,4219150,Vargem,2.808
+SC,4219176,Vargem Bonita,4.793
+SC,4219200,Vidal Ramos,6.290
+SC,4219309,Videira,47.188
+SC,4219358,Vitor Meireles,5.207
+SC,4219408,Witmarsum,3.600
+SC,4219507,Xanxerê,44.128
+SC,4219606,Xavantina,4.142
+SC,4219705,Xaxim,25.713
+SC,4219853,Zortéa,2.991

@@ -6,23 +6,26 @@ use Core\Container;
 class HomeController extends BaseController
 {
     private $db;
+    private $mediaMovel;
 
     public function __construct()
     {
         parent::__construct();
         $this->db = Container::getModel('Home');
+        $this->mediaMovel = Container::getModel("MediaMovel");
     }
 
     public function index()
     {
-        $this->data = $this->db->all() ;        
-        return  $this->renderView('home/home', 'layout/index' , "Home");
+        $this->data = $this->db->findAll() ;
+        return  $this->renderView('home/home');
            
     }
 
-    public function chart()
+    public function chart($codeIbge)
     {
-        $data = $this->db->all() ;
-        return $this->json( $data) ; 
+        $mediaObitos =  $this->mediaMovel->findByParam("where codigo_ibge_municipio  = {$codeIbge}");
+        return $this->json($mediaObitos);
     }
+
 }

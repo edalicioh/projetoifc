@@ -14,9 +14,9 @@ abstract class BaseModel
         $this->pdo = $pdo;
     }
 
-    public function All()
+    public function findAll()
     {
-    $query = "SELECT * FROM {$this->table}";
+        $query = "SELECT * FROM {$this->table}";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute();
         $result = $stmt->fetchAll();
@@ -24,13 +24,23 @@ abstract class BaseModel
         return $result;
     }
 
-    public function find($id)
+    public function findById($id)
     {
         $query = "SELECT * FROM {$this->table} WHERE id=:id";
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindValue(":id", $id);
+        $stmt->bindValue(':id', $id);
         $stmt->execute();
         $result = $stmt->fetch();
+        $stmt->closeCursor();
+        return $result;
+    }
+
+    public function findByParam($parem)
+    {
+        $query = "SELECT * FROM {$this->table} {$parem}";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
         $stmt->closeCursor();
         return $result;
     }
@@ -40,7 +50,7 @@ abstract class BaseModel
         $data = $this->prepareDataInsert($data);
         $query = "INSERT INTO {$this->table} ({$data[0]}) VALUES ({$data[1]})";
         $stmt = $this->pdo->prepare($query);
-        for($i = 0; $i < count($data[2]); $i++){
+        for ($i = 0; $i < count($data[2]); $i++) {
             $stmt->bindValue("{$data[2][$i]}", $data[3][$i]);
         }
         $result = $stmt->execute();
@@ -50,12 +60,12 @@ abstract class BaseModel
 
     private function prepareDataInsert(array $data)
     {
-        $strKeys = "";
-        $strBinds = "";
+        $strKeys = '';
+        $strBinds = '';
         $binds = [];
         $values = [];
 
-        foreach ($data as $key => $value){
+        foreach ($data as $key => $value) {
             $strKeys = "{$strKeys},{$key}";
             $strBinds = "{$strBinds},:{$key}";
             $binds[] = ":{$key}";
@@ -72,8 +82,8 @@ abstract class BaseModel
         $data = $this->prepareDataUpdate($data);
         $query = "UPDATE {$this->table} SET {$data[0]}  WHERE id=:id";
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindValue(":id", $id);
-        for($i = 0; $i < count($data[1]); $i++){
+        $stmt->bindValue(':id', $id);
+        for ($i = 0; $i < count($data[1]); $i++) {
             $stmt->bindValue("{$data[1][$i]}", $data[2][$i]);
         }
         $result = $stmt->execute();
@@ -83,11 +93,11 @@ abstract class BaseModel
 
     private function prepareDataUpdate(array $data)
     {
-        $strKeysBinds = "";
+        $strKeysBinds = '';
         $binds = [];
         $values = [];
 
-        foreach ($data as $key => $value){
+        foreach ($data as $key => $value) {
             $strKeysBinds = "{$strKeysBinds},{$key}=:{$key}";
             $binds[] = ":{$key}";
             $values[] = $value;
@@ -101,7 +111,7 @@ abstract class BaseModel
     {
         $query = "DELETE FROM {$this->table} WHERE id=:id";
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindValue(":id", $id);
+        $stmt->bindValue(':id', $id);
         $result = $stmt->execute();
         $stmt->closeCursor();
         return $result;
@@ -114,5 +124,4 @@ abstract class BaseModel
         $stmt->closeCursor();
         return $result;
     }
-
 }

@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +23,7 @@
 
 
     <?php foreach ($this->view->css as $css) : ?>
-        <script src="/app/Views/<?= $css ?>"></script>
+        <link rel="stylesheet" href="/app/Views/<?= $css ?>">
     <?php endforeach ?>
 </head>
 
@@ -46,7 +43,6 @@
         <?php include_once __DIR__ . "/components/_footer.php" ?>
     </div>
     <!-- ./wrapper -->
-
     <!-- jQuery -->
     <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
@@ -56,6 +52,9 @@
     <!-- AdminLTE App -->
     <script src="https://adminlte.io/themes/dev/AdminLTE/dist/js/adminlte.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <?php foreach ($this->view->js as $js) : ?>
         <script type="module" src="/app/Views/<?= $js ?>"></script>
     <?php endforeach ?>

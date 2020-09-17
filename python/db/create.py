@@ -13,7 +13,7 @@ class Create:
         self.db.execute_query(sql)
 
         sql = """
-            CREATE TABLE dados (                
+            CREATE TABLE dados (
                 data_publicacao TIMESTAMP,
                 recuperados varchar(20),
                 data_inicio_sintomas date,
@@ -68,6 +68,7 @@ class Create:
 
         sql = """
             CREATE TABLE dados_chart (
+                codigo_ibge_municipio varchar(200),
                 cidade varchar(200),
                 obitos varchar(20),
                 positivos varchar(50),
@@ -77,3 +78,20 @@ class Create:
         """
         self.db.execute_query(sql)
         print("Create table Incidência/100mil habitantes")
+
+    def create_table_media_movel(self):
+
+        sql = "drop table media_movel"
+        self.db.execute_query(sql)
+
+        sql = """
+            CREATE TABLE  media_movel (
+                cidade varchar(200),
+                codigo_ibge_municipio varchar(200),
+                data_obito date,
+                quantidade_periudo int,
+                media decimal(10,3)
+            )
+        """
+        self.db.execute_query(sql)
+        print("Create table Media Movel")
