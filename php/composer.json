@@ -1,6 +1,6 @@
 {
-    "name": "hazen/data-click",
-    "description": "Este e um projeto de Teste de Conhecimentos - SUPERO",
+    "name": "hazen/projeto",
+    "description": "Projeto IFC",
     "license": "NTI",
     "authors": [
         {
@@ -15,6 +15,10 @@
         }
     },
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "phpoption/phpoption": "^1.7",
+        "symfony/polyfill-ctype": "^1.18",
+        "vlucas/phpdotenv": "5.2",
+        "filp/whoops": "^2.7"
     }
 }

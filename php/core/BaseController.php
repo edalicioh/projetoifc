@@ -68,32 +68,42 @@ abstract class BaseController
         $arq = file($this->path);
 
         foreach ($arq as $key => $linha) {
+            $linha = trim($linha);
+
             if (strstr($linha, '$js')) {
-                $js = explode('"', $linha)[1];
-                if ($js == null) {
+                $js = explode('"', $linha);
+                if (count($js) > 1) {
+                    $js = $js[1];
+                } else {
                     $js = explode("'", $linha)[1];
                 }
                 $this->js($js);
             }
             if (strstr($linha, '$css')) {
-                $css = explode('"', $linha)[1];
-                if ($css == null) {
+                $css = explode('"', $linha);
+                if (count($css) > 1) {
+                    $css = $css[1];
+                } else {
                     $css = explode("'", $linha)[1];
                 }
                 $this->css($css);
             }
 
             if (strstr($linha, '$title')) {
-                $title = explode('"', $linha)[1];
-                if ($title == null) {
+                $title = explode('"', $linha);
+                if (count($title) > 1) {
+                    $title = $title[1];
+                } else {
                     $title = explode("'", $linha)[1];
                 }
                 $this->title($title);
             }
 
             if (strstr($linha, '$layout')) {
-                $layoutPath = explode('"', $linha)[1];
-                if ($layoutPath == null) {
+                $layoutPath = explode('"', $linha);
+                if (count($layoutPath) > 1) {
+                    $layoutPath = $layoutPath[1];
+                } else {
                     $layoutPath = explode("'", $linha)[1];
                 }
                 $this->layoutPath = $layoutPath;

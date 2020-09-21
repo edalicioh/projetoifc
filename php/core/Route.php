@@ -21,7 +21,7 @@
         {
             foreach ($routes as $route) {
                 $e = explode('@', $route[1]);
-                $r = [$route[0], $e[0], $e[1]];
+                $r = [env['APP_URL'] . $route[0], $e[0], $e[1]];
                 $nR[] = $r;
             }
             $this->routes = $nR;
@@ -60,6 +60,7 @@
                     break;
                 }
             }
+
             if (isset($found)) {
                 $contro = Container::newController($controller);
                 if (isset($parem)) {

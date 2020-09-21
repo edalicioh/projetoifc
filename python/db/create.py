@@ -8,8 +8,8 @@ class Create:
         self.db = Database.get_instance()
 
     def create_table(self):
-        sql = "drop table dados"
 
+        sql = "drop table dados"
         self.db.execute_query(sql)
 
         sql = """
@@ -62,7 +62,6 @@ class Create:
         print("Create table")
 
     def create_table_chart(self):
-
         sql = "drop table dados_chart"
         self.db.execute_query(sql)
 

@@ -16,23 +16,24 @@ def chart(create, dadosDao):
 
     with open(file_name, 'r') as arquivo:
         dados = [x for x in csv.DictReader(arquivo)]
-
+    index = 0
     for dado in dados:
+
         for caso in casos:
-            if caso[0].upper() == unidecode(dado['municipio'].upper()):
+            if caso['municipio'].upper() == unidecode(dado['municipio'].upper()):
 
                 populacaoSplit = dado['populacao'].split(".")
                 populacao = int(populacaoSplit[0] + populacaoSplit[1])
 
-                incidencia = round((int(caso[1]) / populacao) * 100, 3)
-                positivos = caso[1]
+                incidencia = round((int(caso['total']) / populacao) * 100, 3)
+                positivos = caso['total']
                 cidade = dado['municipio']
 
         for obito in obitos:
-            if obito[0].upper() == unidecode(dado['municipio'].upper()):
-                obitoTotal = obito[1]
+            if obito['municipio'].upper() == unidecode(dado['municipio'].upper()):
+                obitoTotal = obito['total']
 
-        var = (
+        params = (
             dado['codigo'],
             cidade,
             obitoTotal,
@@ -41,6 +42,16 @@ def chart(create, dadosDao):
             populacao,
         )
         is_cidade = len(dadosDao.find_by_cidade((cidade,)))
-        print(cidade)
         if is_cidade == 0:
-            dadosDao.insert_chart(var)
+            index += 1
+            print(index)
+            dadosDao.insert_chart(params)
+
+
+if __name__ == "__main__":
+
+    from db.create import Create
+    from dao.DadosDao import DadosDao
+    create = Create()
+    dadosDao = DadosDao()
+    chart(create, dadosDao)

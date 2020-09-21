@@ -23,15 +23,16 @@ def main():
     dadosDao = DadosDao()
 
     create.create_table()
+    values = []
 
-    with closing(request.urlopen(path_ftp)) as r:
-        with open(file_name, 'wb') as f:
-            print("Download")
-
-            shutil.copyfileobj(r, f)
-            print("Download concluído")
+    def req():
+        with closing(request.urlopen(path_ftp)) as r:
+            with open(file_name, 'wb') as f:
+                print("Download")
+                shutil.copyfileobj(r, f)
 
     with open(file_name, 'r') as arquivo:
+
         dados = csv.DictReader(arquivo, delimiter=";")
         for value in dados:
             index = index + 1
@@ -67,8 +68,6 @@ def main():
                     value['data_evolucao_caso'])
 
             data_resultado = Utils.datetime_format(value['data_resultado'])
-
-            print(data_resultado)
 
             val = (
                 data_publicacao,
@@ -114,16 +113,19 @@ def main():
                 value['bairro'],
 
             )
-
-            dadosDao.insert(val)
-            print("---------------------------------")
-            print(index)
-            print("---------------------------------")
+            values.append(val)
+            if len(values) % 5000 == 0:
+                dadosDao.insert_many(values)
+                print("---------------------------------")
+                print(index)
+                print("---------------------------------")
+                values = []
+        dadosDao.insert_many(values)
 
     charts.chart(create, dadosDao)
     media_movel.media(create, dadosDao)
 
-    os.remove(file_name)
+    # os.remove(file_name)
     print(inicio)
     print(datetime.now())
     print("Finall")

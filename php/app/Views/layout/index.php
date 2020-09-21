@@ -32,15 +32,15 @@
 
 
 
-        <?php include_once __DIR__ . "/components/_navbar.php" ?>
+        <?php include_once __DIR__ . '/components/_navbar.php' ?>
 
-        <?php include_once __DIR__ . "/components/_sidebar.php" ?>
+        <?php include_once __DIR__ . '/components/_sidebar.php' ?>
 
 
         <?php $this->content() ?>
 
 
-        <?php include_once __DIR__ . "/components/_footer.php" ?>
+        <?php include_once __DIR__ . '/components/_footer.php' ?>
     </div>
     <!-- ./wrapper -->
     <!-- jQuery -->
